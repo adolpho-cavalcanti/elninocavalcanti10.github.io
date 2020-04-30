@@ -1,0 +1,178 @@
+body{ background-image: url("img/fundo.png");  }
+.todo{ background: #fff; margin-top: 50px; z-index: 1000; position: relative; border-radius: 10px; padding: 50px;}
+.wave{ position: absolute; bottom: 0; left: 0; }
+.subtitulo, .sub-titulo { font-weight: 300; }
+.second-row{ margin-top: 50px; background-color: #202020; border-radius: 15px; }
+.header-row{ background-color: #202020; border-radius: 15px; }
+.todo-conteudo{ display: block; }
+.conteudo{ margin-top: 70px; }
+.imagem{ width: 100%; border: 2px solid gray; border-radius: 10px; }
+.logo{ width: 200px; margin: auto;position: absolute; }
+.msg-erro:hover{ color: #dc3545; }
+.msg-sucesso:hover{ color: #28a745; }
+.final-row{ margin-bottom: 150px;  }
+.nome-lanche{ color: #ffc56a; }
+.conteudo-lanche{ margin: 40px; padding: 20px; }
+.descricao-lanche{ color: #f1f1f1; }
+.quero{ color: #f1f1f1; }
+.todo-lanche{ display: flex; }
+.toda-figura{ margin: auto; }
+input[type="checkbox"] {
+  position: relative;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  transition: 0.5s;
+}
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #f1f1f1;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+input:checked[type="checkbox"]::before {
+  border-left: none;
+  border-top: none;
+  width: 10px;
+  transform: rotate(45deg) translate(1px, -5px); 
+  border-color: green;
+  transition: 0.5s;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1104 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.snip1104 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+figure.snip1104 img {
+  max-width: 100%;
+  position: relative;
+  opacity: 0.4;
+}
+
+figure.snip1104 figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+figure.snip1104 h4 {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  display: inline-block;
+  background: #000000;
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+  padding: 12px 5px;
+  margin: 0;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+figure.snip1104 h4 span {
+  font-weight: 800;
+}
+
+figure.snip1104:before {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #ffffff;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotate(110deg) translateY(-50%);
+  transform: rotate(110deg) translateY(-50%);
+}
+
+figure.snip1104 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.snip1104.blue {
+  background: #123851;
+}
+
+figure.snip1104.blue h4 {
+  background: #0a212f;
+}
+
+figure.snip1104.red {
+  background: #581a14;
+}
+
+figure.snip1104.red h4 {
+  background: #36100c;
+}
+
+figure.snip1104.yellow {
+  background: #7f5006;
+}
+
+figure.snip1104.yellow h4 {
+  background: #583804;
+}
+
+figure.snip1104:hover img,
+figure.snip1104.hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.snip1104:hover h4,
+figure.snip1104.hover h4 {
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+}
+
+figure.snip1104:hover:before,
+figure.snip1104.hover:before {
+  -webkit-transform: rotate(110deg) translateY(-150%);
+  transform: rotate(110deg) translateY(-150%);
+}
+figure.snip1104{ border-radius: 10px; }
+
+@media only screen and (max-width: 600px) {
+  .todo-lanche{ display: block;  }
+  .toda-figura{ margin: 0 auto; display: block; width: 75% }
+  .todo{ width: 90%; padding:30px; }
+  figure.snip1104{ border-radius: 10px; }
+}
