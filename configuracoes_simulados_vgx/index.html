@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Simulados - Portal VGX</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+	<div class="container todo">
+		<div class="row">
+			<div class="col-md-12">
+				<img class="logo" src="img/vgx-logo.png">
+				<h2 class="titulo d-flex justify-content-center">Simulados - Portal VGX</h2>
+				<h4 class="sub-titulo d-flex justify-content-center">Documentação das configurações relacionadas aos simulados no portal VGX</h4>
+			</div>
+		</div>
+		<div class="row second-row">
+			<div class="col-md-12 todo-conteudo">
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página inicial do painel
+					</strong>
+				</p>
+				<img class="imagem" src="img/home.png">
+
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página Simulado
+					</strong>
+				</p>
+				<p>
+					Após clicar em "Simulado" na página inicial, o usuário visualizará o simulado que ele terá que fazer. Após finalizar o simulado o candidato será redirecionado para a página inicial do painel e ele poderá repetir este processo até ele ter realizado todos os simulados que foi designado a ele fazer.
+				</p>
+				<img class="imagem" src="img/simulado.png">
+
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página inical - sem Simulados
+					</strong>
+				</p>
+				<p>
+					Caso o usuário clique em "Simulado" na página inicial e não exista mais simulados para serem respondidos por ele, aparecerá a seguinte mensagem o informando: <strong class="msg-erro">"Não existe provas para serem feitas no momento!"</strong>.
+				</p>
+				<img class="imagem" src="img/sem-simulado.png">
+
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página Simulado ADMIN
+					</strong>
+				</p>
+				<p>
+					Após clicar em "Simulado ADMIN" na página inicial, o usuário visualizará a página de configurações, referentes as configurações do simulado.
+				</p>
+				<img class="imagem" src="img/simulado-admin-home.png">
+
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página Listar Candidato
+					</strong>
+				</p>
+				<p>
+					Após clicar em "Simulado ADMIN", e clicar em "Listar Candidato", o usuário visualizará a página de listagem de candidatos com informações como: (NOME, CPF, QUANTIDADE DE ACERTOS e MODELO DE PROVA). Ou seja, um mesmo colaborador poderá realizar vários simulados de tipos diferentes e a coluna "Modelo de Prova" informa qual o tipo de prova que foi feito por determinado colaborador.
+				</p>
+				<img class="imagem" src="img/listar-candidato.png">
+
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página Criar Simulado
+					</strong>
+				</p>
+				<p>
+					Após clicar em "Simulado ADMIN", e clicar em "Criar Simulado", o usuário visualizará a página para criar novos simulados.<br>
+					<ul class="list-group list-group-flush">
+					  <li class="list-group-item">O 1º campo é o nome que será dado ao simulado. EX: "Simulado Claro"</li>
+					  <li class="list-group-item">O 2º campo é o tipo que será atribuido ao simulado. Este valor não pode ser repetido, cada simulado tem um tipo diferente. EX: "3"</li>
+					  <li class="list-group-item">Após clicar no botão com sinal de " + ", aparecerá os campos de questão, opção e opção correta</li>
+					  <li class="list-group-item">O campo "Enunciado da Questão:" é onde deve ser preenchido o a pergunta.</li>
+					  <li class="list-group-item">Os campos: 1ª, 2ª, 3ª e 4ª opção, devem ser preenchidos com as opções relacionadas a pergunta que está sendo feita.</li>
+					  <li class="list-group-item">Cada campo de Opção, tem um item chamado <strong class="msg-erro">"Correta"</strong> apenas um deles será selecionado e assim informará a <strong>"opção correta"</strong>.</li>
+					  <li class="list-group-item">Para acrescentar mais questões é só repetir o processo e clicar no  botão com sinal de " + ".</li>
+					  <li class="list-group-item">Para finalizar a criação do simulado basta clicar no botão "Criar".</li>
+					</ul>
+
+				</p>
+				<img class="imagem" src="img/criar-prova.png">
+
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página Habilitar Tipos de Simulado
+					</strong>
+				</p>
+				<p>
+					Após clicar em "Simulado ADMIN", e clicar em "Habilitar Tipos de Simulado", o usuário visualizará a página "Tipos Simulado", aqui será adicionado quais usuários poderão fazer determinado Simulado.<br>
+					Você terá a opção de fazer o download do modelo de arquivo e como deve ser preenchido. Após o arquivo está pronto para fazer upload, clique em 'Escolher arquivo' ou arraste o arquivo até a zona tracejada conforme imagem abaixo e depois clique no botão "Enviar arquivo".
+				</p>
+				<img class="imagem" src="img/tipos-simulado.png">
+
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página Conferir dados do arquivo
+					</strong>
+				</p>
+				<p>
+					Após clicar em "Simulado ADMIN", clicar em "Habilitar Tipos de Simulado", clicar em "Enviar arquivo" o usuário visualizará a página para conferir dados do arquivo, após conferir se os dados estão corretos clique em "Confirmar".<br>
+					Assim, o sistema poderá reconhecer os colaborados que estão aptos a responderem os simulados de acordo com os tipos de simulados criado anteriormente.
+				</p>
+				<img class="imagem" src="img/conferir-dados.png">
+
+				<p class="conteudo d-flex justify-content-start">
+					<strong>
+						Página Habilitar Tipos de Simulado - OBSERVAÇÃO:
+					</strong>
+				</p>
+				<p>
+					Após clicar em "Simulado ADMIN", e clicar em "Habilitar Tipos de Simulado", pode-se notar no canto esquerdo da tela uma imagem com o exemplo de como dever ser criado o arquivo para habilitar os candidatos a realizarem os simulados.<br>
+					Logo abaixo, existe um botão para limpar os registros criados anteriormente. Isso serve nos casos que o colaborador já foi habilitado anteriomente com os tipos de provas 1, 2 e 3 por exemplo, suponhamos que foi criado um novo simulado do tipo 4 que deve ser atribuido ao colaborador. Então limpa-se os registros anteriormente e criar um novo arquivo com o novo "tipo" de prova que foi criado.<br>
+					Ficando assim: 1,2,3,4.
+				</p>
+				<img class="imagem" src="img/limpar-registros.png">
+
+			</div>
+		</div>
+
+	</div>
+	<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,176C384,171,480,117,576,112C672,107,768,149,864,138.7C960,128,1056,64,1152,80C1248,96,1344,192,1392,240L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</body>
+</html>

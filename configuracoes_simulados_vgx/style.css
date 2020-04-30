@@ -1,0 +1,11 @@
+body{ background-image: url("img/fundo.jpg");  }
+.todo{ background: #fff; margin-top: 50px; z-index: 1000; position: relative; max-height: 500px; overflow-y: scroll; border-radius: 10px; padding: 50px;}
+.wave{ position: absolute; bottom: 0; left: 0; }
+.subtitulo, .sub-titulo { font-weight: 300; }
+.second-row{ margin-top: 50px; }
+.todo-conteudo{ display: block; }
+.conteudo{ margin-top: 70px; }
+.imagem{ width: 100%; border: 2px solid gray; border-radius: 10px; }
+.logo{ width: 200px; margin: auto;position: absolute; }
+.msg-erro:hover{ color: #dc3545; }
+.msg-sucesso:hover{ color: #28a745; }
