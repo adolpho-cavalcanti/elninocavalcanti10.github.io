@@ -1,4 +1,4 @@
-body{ font-family: 'kaushan Script', cursive; background-image: url("img/fundo-delicias.jpeg"); }
+body{ font-family: 'Montserrat, sans-serif'; background-image: url("img/fundo-delicias.jpeg"); }
 .todo{ padding: 50px;}
 .wave{ position: absolute; bottom: 0; left: 0; }
 .subtitulo, .sub-titulo { font-weight: 300; }
@@ -12,7 +12,8 @@ body{ font-family: 'kaushan Script', cursive; background-image: url("img/fundo-d
 .final-row{ margin-bottom: 150px;  }
 .nome-lanche{ color: #ffc56a; }
 .conteudo-lanche{ margin: 40px; padding: 20px; }
-.descricao-lanche{ color: #f1f1f1; }
+.descricao-lanche{ color: #d1d1d1; transition: 0.8; }
+.descricao-lanche:hover{ color:#fff;}
 .quero{ color: #f1f1f1; }
 .todo-lanche{ display: flex; }
 .toda-logo{ margin: 10px 0; }
